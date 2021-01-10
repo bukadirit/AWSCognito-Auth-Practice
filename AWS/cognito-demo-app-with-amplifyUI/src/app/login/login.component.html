@@ -1,0 +1,13 @@
+<amplify-authenticator *ngIf="authState !== 'signedin'"></amplify-authenticator>
+<amplify-authenticator>
+    <amplify-require-new-password
+      header-text="My Custom Require New Password Text"
+      slot="require-new-password"
+    ></amplify-require-new-password>
+  </amplify-authenticator>
+
+<div *ngIf="authState === 'signedin' && user" class="App">
+    <amplify-sign-out></amplify-sign-out>
+    <div>Hello, {{user.username}}</div>
+    <!-- This is where you application template code goes -->  
+</div>
