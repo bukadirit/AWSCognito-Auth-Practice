@@ -13,9 +13,9 @@ import amplify from './aws-exports';
 Amplify.configure({
   Auth:{
     mandatorySignIn:true,
-    region: 'us-east-2',
-    userPoolId: 'us-east-2_dDkmd1WKc',
-    userPoolWebClientId: '66qfu23ee3u11b8lbse6e5js3p',
+    region: 'Your Region',
+    userPoolId: 'Your Pool ID',
+    userPoolWebClientId: 'Your Client ID',
     authenticationFlowType:'USER_PASSWORD_AUTH'
   }
 });
